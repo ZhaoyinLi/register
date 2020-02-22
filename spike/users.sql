@@ -1,0 +1,1 @@
+CREATE TABLE users(id SERIAL PRIMARY KEY,name varchar(50),username varchar(50),password varchar(300),favclass varchar(50),goal varchar(50),fun varchar (50), other varchar(50), interest varchar(100), pic blob not null);

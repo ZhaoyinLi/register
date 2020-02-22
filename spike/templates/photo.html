@@ -1,0 +1,31 @@
+{% extends "layout.html"%}
+{% block body %}
+<h1>Profile<h1>
+        <form action="" method="POST">
+            <div class="form-group" >
+                <input type="text" name="name" class="form-control" placeholder= {{ "name:"+usernamedata.name }} required >
+            </div>
+        <div class="form-group" >
+            <input type="text" name="username" class="form-control" placeholder= {{ "username:"+usernamedata.username }} required >
+        </div>
+        <div class="form-group" >
+                <input type="text" name="password" class="form-control" placeholder={{ "password:"+usernamedata.password }} required>
+        </div>
+        <div class="form-group" >
+                <input type="text" name="favclass" class="form-control" placeholder= {{ "favoriteclass:"+usernamedata.favclass }} required>
+            </div>
+        <div class="form-group" >
+                    <input type="text" name="goal" class="form-control" placeholder={{"goal:"+usernamedata.goal }} required>
+            </div>
+        <div class="form-group" >
+                   <input type="text" name="fun" class="form-control" placeholder= {{"fun:"+usernamedata.fun }} required>
+            </div>
+        <div class="form-group" >
+                    <input type="text" name="other" class="form-control" placeholder={{"other:"+usernamedata.other }} required>
+            </div>
+        <div class="form-group" >
+                    <input type="text" name="interest" class="form-control" placeholder={{"interest:"+usernamedata.interest }} required>
+            </div>
+            <button class="btn btn-primary" type="sumbit" > edit</button>
+    </form>
+{% endblock %}

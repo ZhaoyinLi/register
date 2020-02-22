@@ -1,0 +1,38 @@
+{% extends "layout.html"%}
+{% block body %}
+<div class="container">
+<h1>Register<h1>
+    <form action="" method="POST">
+        <div class="form-group" >
+            <input type="text" name="name" class="form-control" placeholder="name" required>
+        </div>
+        <div class="form-group" >
+                <input type="text" name="username" class="form-control" placeholder="username" required>
+        </div>
+        <div class="form-group" >
+                <input type="password" name="password" class="form-control" placeholder="password" required>
+        </div>
+        <div class="form-group" >
+                <input type="password" name="confirm" class="form-control" placeholder="confirm password" required>
+        </div>
+        <div class="form-group" >
+                <input type="favclass" name="favclass" class="form-control" placeholder="favorite class" required>
+        </div>
+        <div class="form-group" >
+                <input type="goal" name="goal" class="form-control" placeholder="future goal" required>
+        </div>
+        <div class="form-group" >
+                <input type="fun" name="fun" class="form-control" placeholder="fun stuff" required>
+        </div>
+        <div class="form-group" >
+                <input type="other" name="other" class="form-control" placeholder="other stuff" required>
+        </div>
+        <div class="form-group" >
+                <input type="interest" name="interest" class="form-control" placeholder="interesting links" required>
+        </div>
+        <div class="form-group" >  <input type="file"  name="pic"  class="form-control" accept="image/*" placeholder="upload a picture" > </div>
+       
+   <button class="btn btn-primary" type="sumbit" > submit</button>
+        </form>
+    </div>
+{% endblock %}
